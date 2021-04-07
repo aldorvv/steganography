@@ -14,8 +14,8 @@ $ pip install -r requirements.txt
 ### Uso
 
 ```
-# con el entorno virtual activado e "imagen.jpg" objetivo en images/
-$ python main.py encode imagen.jpg --message="mensaje secreto" 
-# con el entorno virtual activado e "output.jpg" objetivo en outputs/
-$ python main.py decode output.jpg
+# con el entorno virtual activado
+$ python main.py encode /path/hasta/imagen.png --message="mensaje secreto" --output output.png
+# con el entorno virtual activado
+$ python main.py decode /path/hasta/output.png
 ```
