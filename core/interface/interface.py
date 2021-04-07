@@ -18,6 +18,7 @@ class Interface:
     def encode(cls):
         cls.steganography.encode(cls.parser.message, cls.parser.output)
 
+
     @classmethod
     def decode(cls):
         print(cls.steganography.decode())
