@@ -18,6 +18,11 @@ class Interface:
     def encode(self):
         self.steganography.encode(self.parser.message, self.parser.output)
 
+    def decode(self):
+        print(self.steganography.decode())
+
     def launch(self):
         if self.parser.action == 'encode':
             self.encode()
+        elif self.parser.action == 'decode':
+            self.decode()
