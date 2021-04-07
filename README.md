@@ -14,8 +14,8 @@ $ pip install -r requirements.txt
 ### Uso
 
 ```
-# con el entorno virtual activado
-$ python main.py encode /path/hasta/imagen.png --message="mensaje secreto" --output output.png
-# con el entorno virtual activado
-$ python main.py decode /path/hasta/output.png
+$ # Dentro del directorio
+$ chmod +x ./steganos.py
+$ ./steganos.py encode /path/hasta/imagen.png --message="mensaje secreto" --output output.png
+$ ./steganos.py decode /path/hasta/output.png
 ```
