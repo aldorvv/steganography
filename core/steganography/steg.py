@@ -1,5 +1,4 @@
 from pathlib import Path
-from typing import List
 
 from PIL import Image
 from numpy import array
@@ -85,7 +84,7 @@ class Steg:
         output_path = Path.cwd().joinpath(f'output/{output_name}')
         encoded_image.save(output_path)
 
-    def decode(self, end_sequence : str = "::end") -> str:
+    def decode(self, end_sequence: str = "::end") -> str:
         """ Encuentra un mensaje oculto en una imagen previamente tratada con encode.
 
         :return : Mensaje encontrado en una imagen.
